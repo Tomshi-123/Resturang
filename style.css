@@ -101,6 +101,21 @@ html {
 
 
 
+
+
+
+
+
+/*-----------------------------------------------Menu-part--------------------------------------------------*/
+
+
+
+
+
+
+
+
+
   #menu {
     display: flex;
     flex-direction: column;
@@ -121,121 +136,6 @@ html {
     margin-bottom: 0;
 }
 
-.filter-buttons {
-  margin: 20px 0;
-}
-
-button {
-    
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    background-color: rgb(45, 45, 78);
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-button:hover {
-    background-color: #d65a3f;
-}
-
-#menu-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 650px;
-    max-height: 80%;
-    margin: 0 auto;
-    overflow-y: auto;
-    flex-grow: 1; 
-}
-
-.menu-item {
-    width: 100px;
-    height: 100px;
-    background-color:white;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 14px;
-    overflow:hidden;
-
-}
-
-.menu-item img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.order-container {
-  display: flex;
-  gap: 40px; /* Avstånd mellan knapparna */
-  justify-content: flex-start; /* Justera efter behov */
-  align-items: center; /* Säkerställer att de är i samma höjd */
-}
-  
-
-  
- 
-.restaurant-background {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.historyHeader {
-  font-size: 2em;
-  margin-bottom: 15px;
-}
-
-.historyP {
-  font-size: 1.2em;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-
-  #contact {
-    background: #264653;
-    color: white;
-  }
-
-  #contact h2{
-    font-size: 35px;
-  }
-  
-  .contact-form {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 20px !important;
-    width: 50% !important;
-    margin: 0 auto !important;
-  }
-  
-  #contact input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-  }
-  #contact textarea {
-    padding: 40px;
-    border: none;
-    border-radius: 5px;
-  }
-
-
-  
-  .footer {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
 
 
 
@@ -243,110 +143,14 @@ button:hover {
 
 
 
-    
-  @media (max-width: 768px) {
 
 
-    .menu-toggle-btn {
-      font-size: 30px;
-      color: white;
-      background: none;
-      border: none;
-      cursor: pointer;
-      position: fixed;
-      top: 15px;
-      right: 15px;
-      z-index: 1001;
-      visibility: visible;
-  }
-
-  .navigation-menu {
-      display: none; /* Göm menyn som standard */
-      position: absolute;
-      top: 60px;
-      right: 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.9);
-      padding: 10px 0;
-      text-align: center;
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .navigation-menu a {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  
-
-
-  .navigation-menu a:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  /* När menyn är aktiv */
-  .navigation-menu.show {
-      display: flex;
-  }
-    #welcomePage {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: auto;
-      gap: 0;
-  }
-
-  .welcome, 
-  .lunch-buffe {
-      width: 90%; /* Mindre bredd för bättre anpassning */
-      height: 90%;
-      max-width: 400px; /* Sätter en maxbredd så det inte blir för stort */
-      padding: 20px;
-      border-radius: 10px; /* Rundade hörn för en mjukare look */
-      text-align: center;
-  }
-
-  .welcome {
-      background-color: rgba(17, 22, 29, 0.997); /* Lätt genomskinlig bakgrund */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-
-  .welcome img {
-      display: none;
-  }
-
-  #history {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    gap: 0;
-  }
+/*-------------------------------take-away part-------------------------------------*/
 
 
 
-  #menu {
-    background-image: none;
-    background-color: #4A5F5A;
-  }
 
-  .menu-item {
-    text-align: center;
-    font-size: 12px;
-    width: 80px;
-    height: 100px;
-    background-color:white;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
 
-}
-
-  }
 
 #shopping {
   font-family: 'Montserrat', sans-serif;
@@ -355,6 +159,21 @@ button:hover {
   padding: 0;
 }
 
+button {
+    
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: rgb(45, 45, 78);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #d65a3f;
+}
 
 .container {
   width: 90%;
@@ -488,3 +307,225 @@ header {
 .cart-footer button:hover {
   background-color: #9b4a99;
 }
+
+
+
+
+
+
+
+
+/*-----------------------------------------------history-part--------------------------------------------------*/
+  
+
+
+
+
+
+
+
+#history {
+    background-image: url('images/history-image.jpg'); /* Ange sökvägen till din bild */
+    background-size: cover; /* Gör så att bakgrunden täcker hela sektionen */
+    background-position: center; /* Centrerar bakgrunden */
+    background-repeat: no-repeat;
+    color: white;
+    overflow: none;
+}
+ 
+.restaurant-background {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color:transparent;
+  backdrop-filter: blur(50px);
+}
+
+.historyHeader {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.historyP {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------contact-part--------------------------------------------------*/
+
+
+
+
+
+
+
+
+  #contact {
+    background: #264653;
+    color: white;
+  }
+
+  #contact h2{
+    font-size: 35px;
+  }
+  
+  .contact-form {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 50% !important;
+    margin: 0 auto !important;
+  }
+  
+  #contact input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  #contact textarea {
+    padding: 40px;
+    border: none;
+    border-radius: 5px;
+  }
+
+
+  
+  .footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+  /*-----------------------------------------------responsive-part--------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+    
+  @media (max-width: 768px) {
+
+
+    .menu-toggle-btn {
+      font-size: 30px;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 1001;
+      visibility: visible;
+  }
+
+  .navigation-menu {
+      display: none; /* Göm menyn som standard */
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 10px 0;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navigation-menu a {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+
+
+  .navigation-menu a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  /* När menyn är aktiv */
+  .navigation-menu.show {
+      display: flex;
+  }
+    #welcomePage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      gap: 0;
+  }
+
+  .welcome  {
+      width: 90%; /* Mindre bredd för bättre anpassning */
+      height: 90%;
+      max-width: 400px; /* Sätter en maxbredd så det inte blir för stort */
+      padding: 20px;
+      border-radius: 10px; /* Rundade hörn för en mjukare look */
+      text-align: center;
+  }
+
+  .welcome {
+      background-color: rgba(17, 22, 29, 0.997); /* Lätt genomskinlig bakgrund */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .welcome img {
+      display: none;
+  }
+
+  #history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 0;
+  }
+
+
+
+  #menu {
+    background-image: none;
+    background-color: #4A5F5A;
+  }
+
+  .menu-item {
+    text-align: center;
+    font-size: 12px;
+    width: 80px;
+    height: 100px;
+    background-color:white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+ }
