@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
   }
@@ -27,28 +33,34 @@ html {
     visibility: hidden;
   }
   
+  .navigation-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
   .navigation-menu a {
     font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
     color: white;
     text-decoration: none;
-    margin: 115px;
+    margin: 0 15px; /* Justera marginalerna så att de inte är för stora */
   }
-
-
   
   .navigation-menu a:hover {
     text-decoration: underline;
   }
+  
 
   .section {
     font-family: 'Cormorant Garamond', serif;
-    height: 100vh; /* Hela skärmen */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    scroll-snap-align: start;
+    width: 100%; /* Se till att sektionerna tar upp hela bredden */
+    min-height: 100vh; /* Se till att varje sektion täcker hela skärmen */
+    display: flex; /* Använd flexbox för att centrera innehåll */
+    justify-content: center; /* Horisontellt centrerat innehåll */
+    align-items: center; /* Vertikalt centrerat innehåll */
+    overflow: hidden; /* Döljer eventuellt överskridande innehåll */
   }
   
   #welcomePage {
@@ -127,6 +139,7 @@ html {
 
     background: 
         url('images/kock.jpg') left center / 33.33% 100% no-repeat, 
+        url('images/resturantmenu.jpg') center / 33.33% 100% no-repeat,
         url('images/vinflaskor.jpg') right center / 33.33% 100% no-repeat,
         linear-gradient(to right, #301f14 33.33%, #301f14 33.33%, #301f14 66.66%, #301f14 66.66%);
     }
@@ -154,10 +167,16 @@ html {
 
 #shopping {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f5e2bc;
+  background-image: url(images/take-away-mat.jpg);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
   margin: 0;
   padding: 0;
 }
+
+
 
 button {
     
@@ -209,8 +228,9 @@ header {
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 kolumner på större skärmar */
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 .product-item {
@@ -473,6 +493,7 @@ header {
       display: flex;
   }
     #welcomePage {
+      text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -497,9 +518,7 @@ header {
       justify-content: center;
   }
 
-  .welcome img {
-      display: none;
-  }
+
 
   #history {
     display: flex;
@@ -513,8 +532,10 @@ header {
 
 
   #menu {
-    background-image: none;
-    background-color: #4A5F5A;
+    background: 
+      url('images/resturantmenu.jpg') center / 100% 100% no-repeat, /* Endast den mellersta bilden */
+      linear-gradient(to right, #301f14 0%, #301f14 100%);
+
   }
 
   .menu-item {
@@ -528,4 +549,54 @@ header {
     text-align: center;
 
 }
- }
+
+
+
+.product-list {
+  grid-template-columns: 1fr; /* 1 kolumn på mycket små skärmar */
+}
+
+
+.product-item {
+background-color: white;
+padding: 20px;
+box-shadow: 0 7px 15px rgba(0, 0, 0, 0.821);
+text-align: center;
+border-radius: 8px;
+overflow: hidden; /* Förhindrar att bilder eller innehåll "läcker" utanför */
+}
+
+.product-item img {
+width: 100%;
+max-height: 200px;
+object-fit: contain;
+}
+
+.product-item h3 {
+margin: 10px 0;
+font-size: 1.2rem;
+color: #333;
+}
+
+.product-item .price {
+font-size: 1.5rem;
+color: #362056;
+}
+
+.product-item button {
+background-color: #4e2a8400;
+color: rgb(0, 0, 0);
+border: 2px solid rgb(55, 39, 69);
+padding: 10px;
+cursor: pointer;
+border-radius: 8px;
+font-size: 1rem;
+width: 100%;
+margin-top: 10px;
+}
+
+.product-item button:hover {
+background-color: #4b344b5a;
+}
+
+}
