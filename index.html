@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/modal.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/CSS/menu.css">
+    <link rel="stylesheet" href="/CSS/shopping.css">
+    <link rel="stylesheet" href="/CSS/history.css">
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>|MAT|</title>
+  </head>
+
+  
+
+  <body class="portfolioBody">
+    <header class="header">
+      <div class="inner-width">
+        <i class="menu-toggle-btn fa fa-bars"></i>
+<nav class="navigation-menu hidden">
+    <a href="#welcomePage">HEM</a>
+    <a href="#menu"> VÅR MENY</a>
+    <a href="#shopping"> TAKE-AWAY</a>
+    <a href="#history">OM OSS</a>
+    <a href="#contact">KONTAKT</a>
+</nav>
+      </div>
+    </header>
+
+
+    <section id="welcomePage" class="section">
+      <div class="welcome">
+        <img src="images/Simonsens.png" alt="Simonsens">
+      </div>
+      <div class="welcome-text">
+        <h2>Välkommen till Simonsens!</h2>
+        <p>Välkommen till Simonsens, en restaurang där passion för mat och tradition möter nytänkande och kreativitet. Sedan dörrarna öppnades 1988 har Simonsens varit en självklar destination för matälskare som söker en genuin och smakrik upplevelse.</p>
+        <p>På Simonsens är råvaran hjärtat i varje rätt. Vi arbetar med säsongsbetonade ingredienser från lokala odlare och producenter för att skapa rätter som är både hållbara och smakrika. Vår meny förändras med årstiderna, men kärleken till kvalitet, hantverk och rena smaker består.
+
+          Hos oss hittar du allt från elegant tillagad fisk och skaldjur till innovativa vegetariska rätter och omsorgsfullt utvalda kötträtter. Varje tallrik är skapad med en balans mellan tradition och modernitet – en hyllning till det enkla, det vackra och det smakfulla.
+          
+          Välkommen till Simonsens – där varje måltid är en upplevelse att minnas.</p>
+          <button id="buffeBtn" class="buffeBtn">Missa inte vår Buffé!</button>
+
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <section class="lunch-buffe">
+                <header>
+                    <h2>Lunchbuffé på Simonsens</h2>
+                    <p>Välkommen till vår populära lunchbuffé! Vi erbjuder ett urval av smakrika rätter, tillagade med färska och säsongsbetonade råvaror. Perfekt för dig som vill njuta av en god och mättande lunch i en trevlig miljö.</p>
+                </header>
+            
+                <article>
+                    <h3>Öppettider</h3>
+                    <ul>
+                        <li><strong>Måndag - Fredag:</strong> 11:00 - 14:30</li>
+                        <li><strong>Lördag - Söndag:</strong> 12:00 - 15:00</li>
+                    </ul>
+                </article>
+            
+                <article>
+                    <h3>Pris</h3>
+                    <p><strong>Buffé inkl. salladsbord, bröd & kaffe:</strong> 129 SEK</p>
+                    <p><strong>Barn upp till 12 år:</strong> 79 SEK</p>
+                </article>
+            
+                <article>
+                    <h3>Dryck</h3>
+                    <p>Vatten och kaffe ingår i priset.</p>
+                    <p>Läsk och andra drycker kan köpas till:</p>
+                    <ul>
+                        <li><strong>Läsk (33cl):</strong> 25 SEK</li>
+                        <li><strong>Mineralvatten:</strong> 20 SEK</li>
+                        <li><strong>Öl/Vin:</strong> Se vår dryckesmeny</li>
+                    </ul>
+                </article>
+            
+                <footer>
+                    <p>Vi ser fram emot att välkomna dig till en härlig lunchupplevelse hos oss på Simonsens!</p>
+                </footer>
+            </section>
+            </div>
+          
+          </div>
+
+
+      </div> 
+
+        
+      </section>
+
+    <section id="menu" class="section">
+      <h2>MENY</h2>
+
+
+      <!-- Filter-knappar -->
+      <div class="filter-buttons">
+          <button onclick="filterMenu('all')">Alla</button>
+          <button onclick="filterMenu('vegetarian')">Vegetariskt</button>
+          <button onclick="filterMenu('meat')">Kött</button>
+          <button onclick="filterMenu('fish')">Fisk</button>
+      </div>
+  
+      <!-- Matmeny-container -->
+      <div id="menu-container"></div>
+
+
+        <div class="order-container">
+          <button id="reset-btn">Nollställ</button>
+          <div id="total-cost">
+            Total kostnad: <span id="cost-value">0</span> SEK
+          </div>
+          <button id="order-btn">Beställ</button>
+        </div>
+  
+    </section>
+
+    <section id="shopping" class="section">
+
+      <div class="container">
+        
+        <div class="filter-buttons">
+          <button onclick="filterMenu('all')">Alla</button>
+          <button onclick="filterMenu('vegetarian')">Vegetariskt</button>
+          <button onclick="filterMenu('meat')">Kött</button>
+          <button onclick="filterMenu('fish')">Fisk</button>
+          <div class="shopping" id="openShopping">
+            <div class="quantity">0</div>
+        </div>
+        </div>
+        <div class="product-list" id="productList"></div>
+
+        <div class="cart" id="cart">
+            <h2>Cart</h2>
+            <ul class="cart-items" id="cartItems"></ul>
+            <div class="cart-footer">
+                <span>Total: $<span id="cartTotal">0</span></span>
+                <button id="closeShopping">Close</button>
+            </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <section id="history" class="section">
+      <div class="restaurant-background">
+
+          <h2 class="historyHeader">Välkommen till Simonsens!</h2>
+
+          <p class="historyP">Välkommen till <strong>Simonsens</strong>, en restaurang där passion för mat och tradition möter nytänkande och kreativitet. Sedan dörrarna öppnades 1988 har Simonsens varit en självklar destination för matälskare som söker en genuin och smakrik upplevelse.</p>
+    
+          <p class="historyP">På Simonsens är råvaran hjärtat i varje rätt. Vi arbetar med säsongsbetonade ingredienser från lokala odlare och producenter för att skapa rätter som är både hållbara och smakrika. Vår meny förändras med årstiderna, men kärleken till kvalitet, hantverk och rena smaker består.</p>
+    
+          <p class="historyP">Hos oss hittar du allt från elegant tillagad fisk och skaldjur till innovativa vegetariska rätter och omsorgsfullt utvalda kötträtter. Varje tallrik är skapad med en balans mellan tradition och modernitet – en hyllning till det enkla, det vackra och det smakfulla.</p>
+    
+          <p class="historyP">Välkommen till Simonsens – där varje måltid är en upplevelse att minnas.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <form class="contact-form">
+        <h2>Kontakta oss!</h2>
+        <input type="text" placeholder="namn">
+        <input type="email" placeholder="e-post">
+        <textarea placeholder="meddelande"></textarea>
+        <button>skicka</button>
+      </form>
+    </section>
+
+
+    <footer class="footer">
+      <p>&copy; 2025 Alexander Simonsen. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="menu-items.js"></script>
+    <script src="shopping.js"></script>
+  </body>
+</html>

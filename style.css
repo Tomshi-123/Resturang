@@ -1,0 +1,490 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Karla', sans-serif; 
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .header {
+    justify-content: center;
+    align-items: center;
+    background: rgba(17, 22, 29, 0.997);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .menu-toggle-btn {
+    visibility: hidden;
+  }
+  
+  .navigation-menu a {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 115px;
+  }
+
+
+  
+  .navigation-menu a:hover {
+    text-decoration: underline;
+  }
+
+  .section {
+    font-family: 'Cormorant Garamond', serif;
+    height: 100vh; /* Hela skärmen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    scroll-snap-align: start;
+  }
+  
+  #welcomePage {
+    color: rgb(225, 210, 255);
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0) 90%), url(images/blurrigResturang.jpeg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5px;
+    overflow: hidden;
+  }
+
+  .welcome {
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;        
+    justify-content: center;    
+    height: 100vh;              
+    background-color: transparent;
+    color: white;
+}
+
+.welcome img {
+    max-width: 100%;            
+    height: auto;             
+}
+
+
+.buffeBtn {
+    height: 70px !important;
+    width: 200px !important;
+    border: 2px solid white !important;
+    background-color: black !important;
+    border-radius: 0 !important;
+    font-size: 17px !important;
+    margin: 30px !important;
+    color:white;
+}
+
+.buffeBtn:hover {
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+    border: 2px solid grey !important;
+}
+
+
+
+
+  #menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    height: 100vh; /* Gör sektionen lika hög som skärmen */
+    width: 100%; /* Täcker hela bredden */
+
+    background: 
+        url('images/kock.jpg') left center / 33.33% 100% no-repeat, 
+        url('images/vinflaskor.jpg') right center / 33.33% 100% no-repeat,
+        linear-gradient(to right, #301f14 33.33%, #301f14 33.33%, #301f14 66.66%, #301f14 66.66%);
+    }
+
+    #menu h2 {
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.filter-buttons {
+  margin: 20px 0;
+}
+
+button {
+    
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: rgb(45, 45, 78);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #d65a3f;
+}
+
+#menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 650px;
+    max-height: 80%;
+    margin: 0 auto;
+    overflow-y: auto;
+    flex-grow: 1; 
+}
+
+.menu-item {
+    width: 100px;
+    height: 100px;
+    background-color:white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    overflow:hidden;
+
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.order-container {
+  display: flex;
+  gap: 40px; /* Avstånd mellan knapparna */
+  justify-content: flex-start; /* Justera efter behov */
+  align-items: center; /* Säkerställer att de är i samma höjd */
+}
+  
+
+  
+ 
+.restaurant-background {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.historyHeader {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.historyP {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+
+  #contact {
+    background: #264653;
+    color: white;
+  }
+
+  #contact h2{
+    font-size: 35px;
+  }
+  
+  .contact-form {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 50% !important;
+    margin: 0 auto !important;
+  }
+  
+  #contact input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  #contact textarea {
+    padding: 40px;
+    border: none;
+    border-radius: 5px;
+  }
+
+
+  
+  .footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+
+
+
+
+
+    
+  @media (max-width: 768px) {
+
+
+    .menu-toggle-btn {
+      font-size: 30px;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 1001;
+      visibility: visible;
+  }
+
+  .navigation-menu {
+      display: none; /* Göm menyn som standard */
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 10px 0;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navigation-menu a {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+
+
+  .navigation-menu a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  /* När menyn är aktiv */
+  .navigation-menu.show {
+      display: flex;
+  }
+    #welcomePage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      gap: 0;
+  }
+
+  .welcome, 
+  .lunch-buffe {
+      width: 90%; /* Mindre bredd för bättre anpassning */
+      height: 90%;
+      max-width: 400px; /* Sätter en maxbredd så det inte blir för stort */
+      padding: 20px;
+      border-radius: 10px; /* Rundade hörn för en mjukare look */
+      text-align: center;
+  }
+
+  .welcome {
+      background-color: rgba(17, 22, 29, 0.997); /* Lätt genomskinlig bakgrund */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .welcome img {
+      display: none;
+  }
+
+  #history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 0;
+  }
+
+
+
+  #menu {
+    background-image: none;
+    background-color: #4A5F5A;
+  }
+
+  .menu-item {
+    text-align: center;
+    font-size: 12px;
+    width: 80px;
+    height: 100px;
+    background-color:white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+  }
+
+#shopping {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5e2bc;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+.shopping {
+  position: relative;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.quantity {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-item {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.821);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.product-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.product-item h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.product-item .price {
+  font-size: 1.5rem;
+  color: #362056;
+}
+
+.product-item button {
+  background-color: #4e2a8400;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(55, 39, 69);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.product-item button:hover {
+  background-color: #4b344b5a;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: -340px;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+}
+
+.cart h2 {
+  color: #4e2a84;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.cart-items li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cart-footer button {
+  background-color: #4e2a84;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.cart-footer button:hover {
+  background-color: #9b4a99;
+}
