@@ -1,4 +1,4 @@
-//Modal
+
 
 let modal = document.getElementById("myModal");
 
