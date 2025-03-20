@@ -6,54 +6,78 @@
 
 html {
     scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: 'Karla', sans-serif; 
-    margin: 0;
-    padding: 0;
-    scroll-snap-type: y mandatory;
-  }
-  
-  .header {
-    justify-content: center;
-    align-items: center;
-    background: rgba(17, 22, 29, 0.997);
-    color: white;
-    padding: 30px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-  }
-  
-  .menu-toggle-btn {
-    visibility: hidden;
-  }
-  
-  .navigation-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .navigation-menu a {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    margin: 0 15px; /* Justera marginalerna så att de inte är för stora */
-  }
-  
-  .navigation-menu a:hover {
-    text-decoration: underline;
-  }
-  
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-snap-type: y mandatory;
+}
+
+.header {
+  justify-content: center;
+  align-items: center;
+  background: rgba(17, 22, 29, 0.997);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.menu-toggle-btn {
+  visibility: hidden;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navigation-menu a {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  position: relative; /* Lägg till för att kunna använda :before och :after */
+}
+
+.navigation-menu a:before,
+.navigation-menu a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  background: #fff;
+  transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.navigation-menu a:before {
+  left: 0;
+}
+
+.navigation-menu a:after {
+  right: 0;
+}
+
+.navigation-menu a:hover:before {
+  width: 100%;
+}
+
+.navigation-menu a:hover:after {
+  width: 100%;
+}
 
   .section {
+    font-size: 20px;
     font-family: 'Cormorant Garamond', serif;
     width: 100%; /* Se till att sektionerna tar upp hela bredden */
     min-height: 100vh; /* Se till att varje sektion täcker hela skärmen */
@@ -139,7 +163,7 @@ html {
 
     background: 
         url('images/kock.jpg') left center / 33.33% 100% no-repeat, 
-        url('images/resturantmenu.jpg') center / 33.33% 100% no-repeat,
+        url('images/MenySimonsens.png') center / 33.33% 100% no-repeat,
         url('images/vinflaskor.jpg') right center / 33.33% 100% no-repeat,
         linear-gradient(to right, #301f14 33.33%, #301f14 33.33%, #301f14 66.66%, #301f14 66.66%);
     }
@@ -448,7 +472,7 @@ header {
 
 
     
-  @media (max-width: 768px) {
+  @media (max-width: 916px) {
 
 
     .menu-toggle-btn {
@@ -492,7 +516,9 @@ header {
   .navigation-menu.show {
       display: flex;
   }
-    #welcomePage {
+  
+  
+  #welcomePage {
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -503,21 +529,20 @@ header {
   }
 
   .welcome  {
-      width: 90%; /* Mindre bredd för bättre anpassning */
+      width: 100%; /* Mindre bredd för bättre anpassning */
       height: 90%;
       max-width: 400px; /* Sätter en maxbredd så det inte blir för stort */
       padding: 20px;
       border-radius: 10px; /* Rundade hörn för en mjukare look */
       text-align: center;
-  }
-
-  .welcome {
-      background-color: rgba(17, 22, 29, 0.997); /* Lätt genomskinlig bakgrund */
       display: flex;
       align-items: center;
       justify-content: center;
   }
 
+  .welcome img {
+    min-width: 500px;  
+  }
 
 
   #history {
@@ -533,7 +558,7 @@ header {
 
   #menu {
     background: 
-      url('images/resturantmenu.jpg') center / 100% 100% no-repeat, /* Endast den mellersta bilden */
+      url('images/MenySimonsens.png') center / 100% 100% no-repeat, /* Endast den mellersta bilden */
       linear-gradient(to right, #301f14 0%, #301f14 100%);
 
   }
