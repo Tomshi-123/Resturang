@@ -1,4 +1,3 @@
-// Hämta HTML-element som vi kommer att manipulera med JavaScript
 const openShopping = document.getElementById('openShopping'); // Knapp för att öppna kundvagnen
 const closeShopping = document.getElementById('closeShopping'); // Knapp för att stänga kundvagnen
 const cart = document.getElementById('cart'); // Kundvagnen (div som ska flyttas på)
@@ -48,7 +47,7 @@ async function displayMenu(filter = "all") {
 
 // Funktion för att filtrera menyn baserat på kategori
 function filterMenu(category) {
-    displayMenu(category);  // Anropa displayMenu med vald kategori
+    displayMenu(category.toLowerCase());  // Anropa displayMenu med vald kategori
 }
 
 // Funktion som uppdaterar kundvagnen
@@ -115,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => displayMenu());  // Visa all
 // Lägg till event listeners för filtrering av produkter
 document.querySelector('.filter-buttons').addEventListener('click', (e) => {
     if (e.target.tagName === 'BUTTON') {
-        const category = e.target.textContent.toLowerCase();
+        const category = e.target.textContent.trim().toLowerCase();
         filterMenu(category);  // Filtrera produkter baserat på val
     }
-});
+}); 
