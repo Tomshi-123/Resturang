@@ -1,15 +1,11 @@
 [
-    
-    { "name": "Grillad lax", "category": "fish", "price": 90, "image": "images/lax.jpg" },
-    { "name": "Torsk med örtsås", "category": "fish", "price": 90, "image": "images/torsk.jpg" },
-    { "name": "Räksallad", "category": "fish", "price": 90, "image": "images/rakor.jpg" },
-
-    { "name": "Vegetarisk lasagne", "category": "vegetarian", "price": 90, "image": "images/lasagne.jpg" },
-    { "name": "Quinoasallad", "category": "vegetarian", "price": 90, "image": "images/quinoa.jpg" },
-    { "name": "Grillad aubergine", "category": "vegetarian", "price": 90, "image": "images/aubergine.jpg" },
-
-    { "name": "Biff med potatisgratäng", "category": "meat", "price": 90, "image": "images/biff.jpg" },
-    { "name": "Fläskfilé med svampsås", "category": "meat", "price": 90, "image": "images/flaskfile.jpg" },
-    { "name": "Kycklinggryta", "category": "meat", "price": 90, "image": "images/kyckling.jpg" }
-
+    { "id": 1, "name": "Grillad lax", "category": "fish", "price": 90, "image": "images/lax.jpg" },
+    { "id": 2, "name": "Torsk med örtsås", "category": "fish", "price": 90, "image": "images/torsk.jpg" },
+    { "id": 3, "name": "Räksallad", "category": "fish", "price": 90, "image": "images/rakor.jpg" },
+    { "id": 4, "name": "Vegetarisk lasagne", "category": "vegetarian", "price": 90, "image": "images/lasagne.jpg" },
+    { "id": 5, "name": "Quinoasallad", "category": "vegetarian", "price": 90, "image": "images/quinoa.jpg" },
+    { "id": 6, "name": "Grillad aubergine", "category": "vegetarian", "price": 90, "image": "images/aubergine.jpg" },
+    { "id": 7, "name": "Biff med potatisgratäng", "category": "meat", "price": 90, "image": "images/biff.jpg" },
+    { "id": 8, "name": "Fläskfilé med svampsås", "category": "meat", "price": 90, "image": "images/flaskfile.jpg" },
+    { "id": 9, "name": "Kycklinggryta", "category": "meat", "price": 90, "image": "images/kyckling.jpg" }
 ]
