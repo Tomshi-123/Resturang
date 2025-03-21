@@ -1,11 +1,11 @@
 [
-    { "id": 1, "name": "Grillad lax", "category": "fish", "price": 90, "image": "images/GrilladLax.jpg" },
-    { "id": 2, "name": "Torsk med örtsås", "category": "fish", "price": 90, "image": "images/torsk.jpg" },
-    { "id": 3, "name": "Räksallad", "category": "fish", "price": 90, "image": "images/räksallad.jpg" },
-    { "id": 4, "name": "Vegetarisk lasagne", "category": "vegetarian", "price": 90, "image": "images/lasagne.jpg" },
-    { "id": 5, "name": "Quinoasallad", "category": "vegetarian", "price": 90, "image": "images/Quinoasallad.png" },
-    { "id": 6, "name": "Grillad aubergine", "category": "vegetarian", "price": 90, "image": "images/grilladaubergine.jpg" },
-    { "id": 7, "name": "Biff med potatisgratäng", "category": "meat", "price": 90, "image": "images/biff.jpg" },
-    { "id": 8, "name": "Fläskfilé med svampsås", "category": "meat", "price": 90, "image": "images/fläskfile.jpg" },
-    { "id": 9, "name": "Kycklinggryta", "category": "meat", "price": 90, "image": "images/kycklinggryta-med-curry-ny.jpg" }
+    { "id": 1, "name": "Grillad lax", "category": "fish", "price": 90, "image": "CSS/images/GrilladLax.jpg" },
+    { "id": 2, "name": "Torsk med örtsås", "category": "fish", "price": 90, "image": "CSS/images/torsk.jpg" },
+    { "id": 3, "name": "Räksallad", "category": "fish", "price": 90, "image": "CSS/images/räksallad.jpg" },
+    { "id": 4, "name": "Vegetarisk lasagne", "category": "vegetarian", "price": 90, "image": "CSS/images/lasagne.jpg" },
+    { "id": 5, "name": "Quinoasallad", "category": "vegetarian", "price": 90, "image": "CSS/images/Quinoasallad.png" },
+    { "id": 6, "name": "Grillad aubergine", "category": "vegetarian", "price": 90, "image": "CSS/images/grilladaubergine.jpg" },
+    { "id": 7, "name": "Biff med potatisgratäng", "category": "meat", "price": 90, "image": "CSS/images/biff.jpg" },
+    { "id": 8, "name": "Fläskfilé med svampsås", "category": "meat", "price": 90, "image": "CSS/images/fläskfile.jpg" },
+    { "id": 9, "name": "Kycklinggryta", "category": "meat", "price": 90, "image": "CSS/images/kycklinggryta-med-curry-ny.jpg" }
 ]
