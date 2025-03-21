@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -77,6 +78,7 @@ body {
 }
 
   .section {
+    scroll-margin-top: 100px;
     font-size: 20px;
     font-family: 'Cormorant Garamond', serif;
     width: 100%; /* Se till att sektionerna tar upp hela bredden */
@@ -86,6 +88,13 @@ body {
     align-items: center; /* Vertikalt centrerat innehåll */
     overflow: hidden; /* Döljer eventuellt överskridande innehåll */
   }
+
+  #menu, #welcomePage, #shopping, #history, #contact {
+    scroll-margin-top: 100px; /* Justera detta värde till höjden på din header */
+    min-height: 100vh; /* Se till att varje sektion täcker hela skärmen */
+}
+
+
   
   #welcomePage {
     color: rgb(225, 210, 255);
@@ -191,7 +200,7 @@ body {
 
 #shopping {
   font-family: 'Montserrat', sans-serif;
-  background-image: url(images/take-away-mat.jpg);
+  background-image: url(images/blurrigResturang.jpeg);
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -202,21 +211,7 @@ body {
 
 
 
-button {
-    
-  padding: 10px 20px;
-  margin: 5px;
-  border: none;
-  background-color: rgb(45, 45, 78);
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-}
 
-button:hover {
-  background-color: #d65a3f;
-}
 
 .container {
   width: 90%;
@@ -232,13 +227,39 @@ header {
   margin-bottom: 20px;
 }
 
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
+.filter-buttons button {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  position: relative;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: rgba(33, 33, 52, 0);
+  border: 1px solid transparent;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button:hover {
+  border: 1px solid white;
+}
 
 .shopping {
   position: relative;
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+
 
 .quantity {
   position: absolute;
@@ -299,19 +320,22 @@ header {
 }
 
 .cart {
+  color: white;
+  margin-top: 100px; 
   position: fixed;
   top: 0;
   right: -340px;
   width: 300px;
   height: 100%;
-  background-color: white;
+  background-color: rgba(31, 37, 57, 0.675);
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
   padding: 20px;
   transition: right 0.3s ease-in-out;
 }
 
 .cart h2 {
-  color: #4e2a84;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -330,6 +354,24 @@ header {
   padding: 10px;
   background-color: #f8f8f8;
   border-radius: 8px;
+}
+
+#closeShopping {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin: 0 15px;
+  position: relative;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: rgba(33, 33, 52, 0);
+  border: 1px solid rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+#closeShopping:hover {
+  background-color: rgb(23, 23, 58);
 }
 
 .cart-footer {
@@ -517,7 +559,14 @@ header {
       display: flex;
   }
   
+  .section {
+    scroll-margin-top: 50px;
+  }
   
+  #menu, #welcomePage, #shopping, #history, #contact {
+    scroll-margin-top: 50px; /* Justera detta värde till höjden på din header */
+}
+
   #welcomePage {
       text-align: center;
       display: flex;
@@ -622,6 +671,10 @@ margin-top: 10px;
 
 .product-item button:hover {
 background-color: #4b344b5a;
+}
+
+.cart {
+  margin-top: 50px;
 }
 
 }
