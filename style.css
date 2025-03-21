@@ -174,7 +174,7 @@ body {
   #ourVision  {
     font-family: 'Cormorant Garamond', serif;
     color: rgb(225, 210, 255);
-    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0) 90%), url(images/darkTable.jpg);
+    background-image: url(images/darkTable.jpg);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -210,7 +210,7 @@ body {
 
 #shopping {
   font-family: 'Montserrat', sans-serif;
-  background-image: url(images/blurrigResturang.jpeg);
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0) 30%), url(images/blurrigResturang.jpeg);
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -301,17 +301,26 @@ header {
   cursor: pointer;
 }
 
+#fasfa-cart {
+  color: rgb(255, 166, 106);
 
+}
+
+#fasfa-cart:hover {
+  color: rgb(51, 51, 114);
+}
 
 .quantity {
   position: absolute;
-  top: -10px;
-  right: -10px;
-  background-color: rgb(0, 17, 255);
+  top: 1px;
+  left: 12px;
   color: white;
   border-radius: 50%;
-  padding: 5px 10px;
+  padding:5px 10px;
+
+
 }
+
 
 .product-list {
   display: grid;
@@ -377,11 +386,14 @@ header {
 }
 
 .cart h2 {
+
   color: #ffffff;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .cart-items {
+  color: black;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -458,7 +470,6 @@ header {
     background-position: center; /* Centrerar bakgrunden */
     background-repeat: no-repeat;
     color: rgb(0, 0, 0);
-    overflow: none;
 }
  
 .restaurant-background {
@@ -652,32 +663,13 @@ header {
   }
 
 
-  #history {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    gap: 0;
-  }
 
 
 
-
-
-  .menu-item {
-    text-align: center;
-    font-size: 12px;
-    width: 80px;
-    height: 100px;
-    background-color:white;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-
+.filter-buttons button {
+  margin: 0;
+  font-size: 18px;
 }
-
-
 
 .product-list {
   grid-template-columns: 1fr; /* 1 kolumn på mycket små skärmar */
@@ -725,6 +717,19 @@ margin-top: 10px;
 .product-item button:hover {
 background-color: #4b344b5a;
 }
+
+
+
+#history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  gap: 0;
+}
+
+
 
 
 
