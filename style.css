@@ -150,6 +150,7 @@ body {
     background-color: rgb(255, 255, 255) !important;
     color: black !important;
     border: 2px solid grey !important;
+    cursor: pointer;
 }
 
 
@@ -362,7 +363,7 @@ header {
 
 .cart {
   color: white;
-  margin-top: 100px; 
+  margin: 0; 
   position: fixed;
   top: 0;
   right: -340px;
@@ -714,8 +715,6 @@ margin-top: 10px;
 background-color: #4b344b5a;
 }
 
-.cart {
-  margin-top: 50px;
-}
+
 
 }
