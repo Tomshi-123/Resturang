@@ -171,29 +171,29 @@ body {
 
 
 
-  #menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    color: black;
-    height: 100vh; /* Gör sektionen lika hög som skärmen */
-    width: 100%; /* Täcker hela bredden */
+  #ourVision  {
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(225, 210, 255);
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0) 90%), url(images/darkTable.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    overflow: hidden;
+  }
 
-    background: 
-        url('images/kock.jpg') left center / 33.33% 100% no-repeat, 
-        url('images/MenySimonsens.png') center / 33.33% 100% no-repeat,
-        url('images/vinflaskor.jpg') right center / 33.33% 100% no-repeat,
-        linear-gradient(to right, #301f14 33.33%, #301f14 33.33%, #301f14 66.66%, #301f14 66.66%);
-    }
-
-    #menu h2 {
-    margin-top: 100px;
-    margin-bottom: 0;
-}
+  #ourVision img {
+    width:80%;
+    height: 100vh;
+  }
 
 
-
+  .vision {
+    margin: 20px;
+  }
 
 
 
@@ -457,7 +457,7 @@ header {
     background-size: cover; /* Gör så att bakgrunden täcker hela sektionen */
     background-position: center; /* Centrerar bakgrunden */
     background-repeat: no-repeat;
-    color: white;
+    color: rgb(0, 0, 0);
     overflow: none;
 }
  
@@ -467,8 +467,12 @@ header {
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
-  background-color:transparent;
-  backdrop-filter: blur(50px);
+  background-image: url(images/papper.jpg);
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
+  font-size:25px;
+  text-align: center;
 }
 
 .historyHeader {
@@ -605,7 +609,7 @@ header {
     scroll-margin-top: 50px;
   }
   
-  #menu, #welcomePage, #shopping, #history, #contact {
+  #ourVision, #welcomePage, #shopping, #history, #contact {
     scroll-margin-top: 50px; /* Justera detta värde till höjden på din header */
 }
 
@@ -635,6 +639,18 @@ header {
     min-width: 500px;  
   }
 
+  #ourVision {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #ourVision img {
+    width: 100%;
+
+  }
+
 
   #history {
     display: flex;
@@ -647,12 +663,7 @@ header {
 
 
 
-  #menu {
-    background: 
-      url('images/MenySimonsens.png') center / 100% 100% no-repeat, /* Endast den mellersta bilden */
-      linear-gradient(to right, #301f14 0%, #301f14 100%);
 
-  }
 
   .menu-item {
     text-align: center;
