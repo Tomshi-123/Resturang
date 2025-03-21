@@ -78,6 +78,9 @@ body {
 }
 
   .section {
+    opacity: 0; /* Gör sektionen osynlig från början */
+    transform: translateY(30px); /* Flytta den 30px nedåt */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     scroll-margin-top: 100px;
     font-size: 20px;
     font-family: 'Cormorant Garamond', serif;
@@ -87,6 +90,12 @@ body {
     justify-content: center; /* Horisontellt centrerat innehåll */
     align-items: center; /* Vertikalt centrerat innehåll */
     overflow: hidden; /* Döljer eventuellt överskridande innehåll */
+  }
+
+
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   #menu, #welcomePage, #shopping, #history, #contact {

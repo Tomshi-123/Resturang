@@ -1,6 +1,8 @@
 import "./menu-toggle.js";  
-import "./modal.js";       
+import "./modal.js";  
+import "./fadein.js";     
 import "./shopping.js";
+
 
 
 // Se till att allt laddas efter DOM:en
