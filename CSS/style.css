@@ -542,6 +542,19 @@ header {
     border-radius: 5px;
   }
 
+  #contact button {
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(133, 158, 203);
+    border: none;
+    border-radius: 5px;
+  }
+
+  #contact button:hover {
+    background-color: rgb(87, 110, 151);
+    cursor: pointer;
+  }
+
 
   
   .footer {
@@ -659,6 +672,7 @@ header {
 
   #ourVision img {
     width: 100%;
+    height:auto;
 
   }
 
