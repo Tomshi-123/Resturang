@@ -14,7 +14,7 @@
   
   /* Modal Content/Box */
   .modal-content {
-    background-image: url('/images/buffe2.jpg');
+    background-image: url('images/buffe2.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
